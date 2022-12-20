@@ -1,0 +1,815 @@
+/*Maps*/
+#hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+/*Extend*/
+.fondo .historia, .fondo .deportes {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 40px;
+}
+
+/*Mixins*/
+/*Proyecto tienda*/
+.navbar-custom {
+  background-color: black;
+}
+
+.navbar .getstarted {
+  margin-left: 30px;
+  border-radius: 4px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.navbar .navbar-brand {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: Adineue;
+}
+.navbar .navbar-brand:focus {
+  color: aqua;
+}
+.navbar .navbar-brand:hover {
+  color: aqua;
+}
+.navbar .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: aqua;
+}
+
+.navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+}
+
+.custom-toggler .navbar-toggler {
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+}
+.custom-toggler .navbar-toggler:focus {
+  color: rgb(255, 255, 255);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: white;
+}
+
+/* AJUSTES GLOBALES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CONTENEDOR INTRO NUESTROS PRODUCTOS */
+.promo {
+  padding-top: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.promo h1 {
+  font-size: 70px;
+}
+.promo h2 {
+  font-size: 70px;
+}
+
+.imagen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+.boton {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.boton:hover {
+  color: white;
+}
+
+/* PRODUCTOS INDEX */
+.boton-dever {
+  display: flex;
+  justify-content: end;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+
+.boton-vermas {
+  text-decoration: underline;
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-family: Adineue;
+}
+.boton-vermas:hover {
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+/* FINALIZA PRODUCTOS INDEX */
+.container-imagen2 {
+  background: url(../img/fw22-adiclub-wc-statement-generico-d_tcm216-968551.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 52vh;
+}
+
+@media screen and (max-width: 320px) {
+  .container-imagen {
+    background-size: 217vh;
+  }
+  .container-imagen2 {
+    background-size: 217vh;
+  }
+}
+.container-texto {
+  height: 22vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 40px;
+}
+.container-texto h2 {
+  font-family: Adineue;
+  font-size: 32px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  font-family: Adineue;
+  color: #000000;
+  font-style: inherit;
+  background-size: contain;
+}
+
+.enlace1 {
+  color: rgb(0, 0, 0);
+}
+.enlace1:hover {
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+}
+
+.link2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+  font-family: Adineue;
+  color: #000000;
+  font-style: inherit;
+}
+
+/* COPIA BANNER*/
+.container-imagen {
+  background: url(../img/fw22-holidays-mh-hp-d_tcm216-971241.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.container-texto1 {
+  height: 37vh;
+  width: max-content;
+  display: flex;
+  align-items: flex-end;
+  justify-content: start;
+  margin-left: 15px;
+}
+.container-texto1 h2 {
+  font-family: Adineue;
+  font-size: 40px;
+  color: white;
+}
+
+.texto-lucete {
+  color: white;
+  margin-left: 15px;
+  width: 470px;
+}
+.texto-lucete p {
+  text-align: left;
+  font-size: 18px;
+}
+
+.link1 {
+  display: flex;
+  justify-content: start;
+  font-family: Adineue;
+  color: #ffffff;
+  font-style: inherit;
+  background-size: contain;
+  margin-left: 15px;
+}
+
+.enlace2 {
+  color: rgb(255, 255, 255);
+}
+.enlace2:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.link3 {
+  display: flex;
+  justify-content: start;
+  margin-top: 15px;
+  font-family: Adineue;
+  color: #000000;
+  font-style: inherit;
+  margin-left: 15px;
+}
+
+/* FINALIZA MENU NAVEGACION */
+/*CARROUSEL LOCALES*/
+.section-padding {
+  padding: 100px 0;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.carousel-inner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.carousel-caption .btn {
+  color: rgb(255, 255, 255);
+}
+
+.carousel-caption .btn:hover {
+  color: aqua;
+}
+
+/* TERMINA CAROUSEL */
+/* COMIENZA NUESTRA HISTORIA */
+.fondo {
+  background-color: rgb(245, 245, 229);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.fondo .titulo {
+  font-family: "adineue";
+  display: flex;
+  text-align: left;
+  max-width: 420px;
+  letter-spacing: 0.02em;
+}
+.fondo h3 {
+  font-size: 40px;
+  line-height: 1;
+}
+.fondo .parrafo {
+  margin-top: 20px;
+}
+/* COMIENZA PIE DE PAGINA */
+h5 {
+  text-transform: uppercase;
+}
+
+/* NUEVA SECCION DE PRODUCTOS */
+.container1 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  justify-content: space-around;
+}
+
+.container1 .card {
+  margin-bottom: 35px;
+  border: none;
+}
+
+.card:hover {
+  display: block;
+  border: 2px solid;
+}
+
+/* TERMINA PAG PRODUCTOS
+
+  /*FORMULARIO*/
+body {
+  color: rgb(255, 255, 255);
+  font-family: "Quicksand", sans-serif;
+}
+
+.content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 90px;
+}
+.logo span {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-form form label {
+  display: block;
+}
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
+}
+.contact-form form .block {
+  grid-column: 1/3;
+}
+.contact-form form button {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #ff0000;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+.contact-form form button:hover {
+  background: aqua;
+  color: rgb(0, 0, 0);
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+.contact-form form button:focus {
+  background: aqua;
+  color: rgb(0, 0, 0);
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+.contact-form form input {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.contact-form form textarea {
+  width: 100%;
+  padding: 0.7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid #ffffff;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  margin-left: 20px;
+  height: 250px;
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(45deg, hsl(0deg, 0%, 100%) 0%, hsl(344deg, 0%, 100%) 5%, hsl(344deg, 0%, 99%) 10%, hsl(0deg, 0%, 90%) 100%);
+  border: 2px solid rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.contact-info h4 {
+  text-align: left;
+}
+.contact-info ul {
+  text-align: left;
+}
+.contact-info p {
+  text-align: left;
+}
+
+.contenedor-imagen-adidas {
+  display: flex;
+  justify-content: center;
+}
+.contenedor-imagen-adidas img {
+  width: 70px;
+  height: 90px;
+}
+
+.texto-buscador {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-family: Adineue;
+}
+
+.texto-store {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Adineue;
+}
+
+.boton-buscador {
+  border-radius: 5px;
+  background-image: linear-gradient(to left bottom, #2c88ff, #2787ff, #2287ff, #1b86ff, #1286ff, #0d84ff, #0683ff, #0081ff, #007dff, #0078ff, #0074ff, #006fff);
+  color: white;
+  font-size: 14px;
+  border: none;
+  box-shadow: 3px 5px 46px -6px rgba(255, 255, 255, 0.41) inset;
+  -webkit-box-shadow: 3px 5px 46px -6px rgba(255, 255, 255, 0.41) inset;
+  -moz-box-shadow: 3px 5px 46px -6px rgba(255, 255, 255, 0.41) inset;
+  padding: 7px;
+}
+.boton-buscador:hover {
+  border-radius: 5px;
+  background-image: linear-gradient(to left bottom, #006eff, #0073ff, #2287ff, #1b86ff, #1286ff, #0d84ff, #0683ff, #0081ff, #007dff, #0078ff, #0074ff, #006fff);
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  border: none;
+  padding: 7px;
+}
+
+.texto-pedidos {
+  margin-top: 60px;
+}
+
+.texto-productos {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Adineue";
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  width: 500px;
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+}
+.texto-productos h4 {
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.espacio {
+  background-color: #ffffff;
+  color: white;
+  width: 100%;
+  height: 120px;
+}
+
+.contenedorDeTendencias {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.texto-tendencias {
+  color: black;
+  text-transform: uppercase;
+  font-family: "Adineue";
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  width: 225px;
+  height: 110px;
+  display: flex;
+  align-items: flex-end;
+}
+.texto-tendencias h4 {
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.contenedor-tt {
+  padding-top: 0;
+  padding-left: 10px;
+}
+.contenedor-tt video {
+  margin-bottom: 8px;
+}
+.contenedor-tt img {
+  margin-bottom: 8px;
+}
+.contenedor-tt .enlace3 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+.contenedor-tt .enlace3:hover {
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+}
+.contenedor-tt h5 {
+  text-transform: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+.contenedor-tt p {
+  font-size: 13px;
+}
+.contenedor-tt .pruebaimagen {
+  margin-top: 8px;
+}
+.contenedor-tt .pruebaimagen2 {
+  padding-left: 15px;
+  margin-top: 17px;
+}
+
+.fondo2 {
+  background-color: #ebedee;
+  height: 126px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fondo2 .encontra-tu-equipo {
+  padding-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.fondo2 .encontra-tu-equipo h2 {
+  font-size: 16px;
+}
+.fondo2 .escudos-equipo {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.fondo2 .escudos-equipo a {
+  text-decoration: none;
+}
+.fondo2 .escudos-equipo img {
+  width: 51px;
+  height: 44px;
+}
+
+.separacion {
+  height: 120px;
+}
+
+/* LARGE SIZE */
+@media (min-width: 700px) {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+  .contact-info ul,
+  .contact-info p {
+    text-align: left;
+  }
+}
+/* FULL RESPONSIVE */
+@media screen and (max-width: 320px) {
+  header {
+    background-color: rgb(0, 0, 0);
+  }
+  .logo {
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0);
+    font-size: 25px;
+  }
+  .menu {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    padding-right: 5px;
+  }
+  .menu-item {
+    background-color: rgb(0, 0, 0);
+  }
+  .imagen-contenedor {
+    background-color: antiquewhite;
+  }
+  .contenedor-body {
+    flex-wrap: wrap;
+  }
+  .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    left: 10px;
+    top: 50px;
+  }
+  .adidas {
+    font-size: 40px;
+  }
+  .imagen-contenedor {
+    width: 200px;
+  }
+  .mostrador .fila {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: center;
+    justify-content: center;
+  }
+  .columna3 {
+    margin-left: 80px;
+    padding: 40px;
+    margin-top: -60px;
+  }
+  .columna3 .fila3 img {
+    margin-left: 10px;
+  }
+  .container-texto1 {
+    flex-wrap: wrap;
+    align-items: end;
+    width: 270px;
+  }
+  .container-texto1 h2 {
+    font-size: 30px;
+    flex-wrap: wrap;
+  }
+  .texto-lucete {
+    width: 300px;
+  }
+  .container-texto h2 {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .promo h1 {
+    font-size: 40px;
+  }
+  .container-texto {
+    flex-wrap: wrap;
+    margin-left: 25px;
+  }
+  .container-texto1 {
+    flex-wrap: wrap;
+    align-items: end;
+    width: 270px;
+  }
+  .container-texto1 h2 {
+    font-size: 30px;
+    flex-wrap: wrap;
+  }
+  .texto-lucete {
+    width: 300px;
+  }
+  .container-texto h2 {
+    margin-top: 30px;
+  }
+  .fondo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .foot {
+    display: flex;
+    align-items: center;
+  }
+  .foot2 {
+    display: flex;
+    justify-content: center;
+  }
+  .foot3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 969px) {
+  .imagen-gana .texto-messi {
+    margin-left: 20px;
+  }
+  .container-texto {
+    flex-wrap: wrap;
+    margin-left: 25px;
+  }
+}
+/* ASIGNACION DE FUENTES */
+@font-face {
+  font-family: Adineue;
+  src: url("../fonts/adineue.ttf");
+}
+
+/*# sourceMappingURL=style.css.map */
