@@ -592,9 +592,7 @@ ul {
   font-family: "Adineue";
   padding-left: 15px;
   padding-right: 15px;
-  padding-bottom: 20px;
-  width: 225px;
-  height: 110px;
+  width: 600px;
   display: flex;
   align-items: flex-end;
 }
@@ -606,7 +604,7 @@ ul {
 
 .contenedor-tt {
   padding-top: 0;
-  padding-left: 10px;
+  padding-right: 10px;
 }
 .contenedor-tt video {
   margin-bottom: 8px;
@@ -636,10 +634,10 @@ ul {
   margin-top: 8px;
 }
 .contenedor-tt .pruebaimagen2 {
-  padding-left: 15px;
   margin-top: 17px;
 }
 
+/*TU EQUIPO */
 .fondo2 {
   background-color: #ebedee;
   height: 126px;
@@ -658,6 +656,11 @@ ul {
 .fondo2 .escudos-equipo {
   margin-left: 15px;
   margin-right: 15px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
 }
 .fondo2 .escudos-equipo a {
   text-decoration: none;
@@ -671,7 +674,15 @@ ul {
   height: 120px;
 }
 
-/* LARGE SIZE */
+.texto-parrafo-tendencias {
+  padding-left: 15px;
+}
+
+.pi-6 .pr4 h5 {
+  font-size: medium;
+}
+
+/* MEDIAS QUERIES */
 @media (min-width: 700px) {
   .contact-wrapper {
     display: grid;
@@ -761,9 +772,13 @@ ul {
   .promo h1 {
     font-size: 40px;
   }
+  .promo h2 {
+    font-size: 40px;
+  }
   .container-texto {
     flex-wrap: wrap;
     margin-left: 25px;
+    margin-right: 25px;
   }
   .container-texto1 {
     flex-wrap: wrap;
@@ -784,19 +799,78 @@ ul {
     display: flex;
     flex-wrap: wrap;
   }
-  .foot {
+  .contenedorDeTendencias {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
   }
-  .foot2 {
-    display: flex;
-    justify-content: center;
+  .contenedorDeTendencias .contenedor-tt {
+    margin-top: 30px;
   }
-  .foot3 {
+  .texto-productos {
+    width: 200px;
+    margin-top: 60px;
+  }
+  .texto-productos h4 {
+    font-size: 30px;
+  }
+  .boton-dever {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    padding-right: 40px;
+    padding-left: 15px;
+    margin-top: 75px;
+    align-items: flex-end;
+    justify-content: left;
+  }
+  .texto-tendencias {
+    width: 200px;
+  }
+  .texto-tendencias h4 {
+    font-size: 36px;
+  }
+  .texto-parrafo-tendencias {
+    padding-left: 15px;
+  }
+  .fondo2 {
+    padding-right: 15px;
+  }
+  .fondo2 .escudos-equipo {
+    width: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+  .card {
+    margin-top: 20px;
+  }
+  .contact-info {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .pi-6 {
+    display: flex;
+  }
+  .pi-6 .pr4 {
+    margin-left: 10px;
+  }
+  .pi-6 .pr4 h5 {
+    font-size: 10px;
+  }
+  .pi-6 .col-2 {
+    margin-right: 50px;
+    margin-left: 5px;
+  }
+  .pi-6 .pr6 {
+    position: absolute;
+    margin-top: 212px;
+    margin-left: 242px;
   }
 }
+.foot {
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 969px) {
   .imagen-gana .texto-messi {
     margin-left: 20px;

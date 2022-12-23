@@ -129,7 +129,8 @@ $estilos: (min-alto: 100vh,
     h1 {
         font-size: 70px;
     }
-    h2{
+
+    h2 {
         font-size: 70px;
     }
 }
@@ -686,9 +687,7 @@ ul {
     font-family: 'Adineue';
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 20px;
-    width: 225px;
-    height: 110px;
+    width: 600px;
     display: flex;
     align-items: flex-end;
 
@@ -701,17 +700,17 @@ ul {
 
 .contenedor-tt {
     padding-top: 0;
-    padding-left: 10px;
+    padding-right: 10px;
 
-    video{
-        margin-bottom: 8px;
-    }
-    img{
+    video {
         margin-bottom: 8px;
     }
 
-    .video-prueba {
+    img {
+        margin-bottom: 8px;
     }
+
+    .video-prueba {}
 
     .enlace3 {
         color: rgb(0, 0, 0);
@@ -741,43 +740,65 @@ ul {
     }
 
     .pruebaimagen2 {
-        padding-left: 15px;
         margin-top: 17px;
     }
 }
 
+/*TU EQUIPO */
 .fondo2 {
     background-color: #ebedee;
     height: 126px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    .encontra-tu-equipo{
+
+    .encontra-tu-equipo {
         padding-top: 20px;
         text-transform: uppercase;
         text-align: center;
-        h2{
+
+        h2 {
             font-size: 16px;
         }
     }
-    .escudos-equipo{
+
+    .escudos-equipo {
         margin-left: 15px;
         margin-right: 15px;
-        a{
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+
+        a {
             text-decoration: none;
         }
-        img{
-        width: 51px;
-        height: 44px;
+
+        img {
+            width: 51px;
+            height: 44px;
         }
     }
 }
 
-.separacion{
+.separacion {
     height: 120px;
 }
 
-/* LARGE SIZE */
+.texto-parrafo-tendencias {
+    padding-left: 15px;
+}
+
+.pi-6{
+    .pr4{
+        h5{
+            font-size: medium;
+        }
+    }
+}
+
+/* MEDIAS QUERIES */
 @media(min-width: 700px) {
 
     .contact-wrapper {
@@ -889,9 +910,14 @@ ul {
         font-size: 40px;
     }
 
+    .promo h2 {
+        font-size: 40px;
+    }
+
     .container-texto {
         flex-wrap: wrap;
         margin-left: 25px;
+        margin-right: 25px;
     }
 
     .container-texto1 {
@@ -918,20 +944,91 @@ ul {
         flex-wrap: wrap;
     }
 
-    .foot {
+    .contenedorDeTendencias {
+        .contenedor-tt {
+            margin-top: 30px;
+        }
+
         display: flex;
-        align-items: center;
+        flex-wrap: wrap;
     }
 
-    .foot2 {
-        display: flex;
-        justify-content: center;
+    .texto-productos {
+        width: 200px;
+        margin-top: 60px;
+
+        h4 {
+            font-size: 30px;
+        }
     }
 
-    .foot3 {
-        display: flex;
-        justify-content: center;
+    .boton-dever {
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        padding-right: 40px;
+        padding-left: 15px;
+        margin-top: 75px;
+        align-items: flex-end;
+        justify-content: left;
     }
+
+    .texto-tendencias {
+        width: 200px;
+
+        h4 {
+            font-size: 36px;
+        }
+    }
+
+    .texto-parrafo-tendencias {
+        padding-left: 15px;
+    }
+
+    .fondo2 {
+        padding-right: 15px;
+
+        .escudos-equipo {
+            width: 300px;
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .pi-6{
+        display: flex;
+        .pr4{
+            margin-left: 10px;
+            h5{
+                font-size: 10px;
+            }
+        }
+        .col-2{
+            margin-right: 50px;
+            margin-left: 5px
+        }
+        .pr4{
+        }
+        .pr6{
+            position: absolute;
+            margin-top: 212px;
+            margin-left: 242px;
+        }
+    }
+}
+
+.foot{
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (max-width: 969px) {
