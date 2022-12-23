@@ -678,8 +678,15 @@ ul {
   padding-left: 15px;
 }
 
-.pi-6 .pr4 h5 {
-  font-size: medium;
+.col h5 {
+  font-size: 18px;
+}
+.col .flex-column {
+  font-size: 13px;
+}
+
+.imagen-gramd img {
+  height: 150px;
 }
 
 /* MEDIAS QUERIES */
@@ -846,24 +853,6 @@ ul {
   .contact-info {
     margin-top: 20px;
     margin-right: 20px;
-  }
-  .pi-6 {
-    display: flex;
-  }
-  .pi-6 .pr4 {
-    margin-left: 10px;
-  }
-  .pi-6 .pr4 h5 {
-    font-size: 10px;
-  }
-  .pi-6 .col-2 {
-    margin-right: 50px;
-    margin-left: 5px;
-  }
-  .pi-6 .pr6 {
-    position: absolute;
-    margin-top: 212px;
-    margin-left: 242px;
   }
 }
 .foot {
