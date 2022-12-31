@@ -170,6 +170,57 @@ $estilos: (min-alto: 100vh,
     }
 }
 
+/* VIDEO */
+#hero1 {
+    position: relative;
+
+    .promo1 {
+        bottom: 29px;
+        position: absolute;
+        z-index: 1;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+
+        .tex {
+            color: white;
+            padding-top: 20px;
+            padding-left: 15px;
+            width: 400px;
+
+            h2 {
+                font-size: 40px;
+                font-family: 'Adineue';
+            }
+        }
+
+        .parrafos {
+            color: white;
+            width: 530px;
+            padding-left: 15px;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .video-style {
+        display: flex;
+        object-fit: cover;
+
+        video {
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+
 /* PRODUCTOS INDEX */
 
 .boton-dever {
@@ -438,6 +489,13 @@ h5 {
     justify-content: center;
     padding: 40px;
     justify-content: space-around;
+    .precio{
+        background-color: white;
+        margin-top: 260px;
+        margin-left: 2px;
+        top: 0;
+        position: absolute;
+    }
 }
 
 .container1 {
@@ -790,18 +848,135 @@ ul {
     padding-left: 15px;
 }
 
-.col{
-    h5{
+.col {
+    h5 {
         font-size: 18px;
     }
-    .flex-column{
+
+    .flex-column {
         font-size: 13px;
     }
 }
 
-.imagen-gramd{
-    img{
+.imagen-gramd {
+    img {
         height: 150px;
+    }
+}
+
+.py-5 {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/*MENUES SELECCIONABLES*/
+.equipos-seleccionable {
+    padding: 15px;
+    margin-bottom: 10px;
+
+    .texto-menues {
+        color: black;
+        text-transform: uppercase;
+        font-family: 'Adineue';
+        width: 600px;
+        display: flex;
+        align-items: flex-end;
+
+        h2 {
+            font-size: 32px;
+            letter-spacing: .02em;
+            line-height: 1;
+        }
+    }
+
+    .menues-contenedor {
+        a {
+            color: black;
+            font-family: 'adineue';
+            text-decoration: none;
+            text-transform: unset;
+            letter-spacing: .02em;
+            font-size: 40px;
+            line-height: 1;
+            border: none;
+            border-bottom: 1px solid black;
+            width: 100%;
+            padding: 0 0 .4rem 0;
+            margin-bottom: -1px;
+
+            &:hover {
+                border-bottom: 7px solid black;
+                color: black;
+                font-family: 'adineue';
+                text-decoration: none;
+                text-transform: unset;
+                letter-spacing: .02em;
+                font-size: 40px;
+                line-height: 1;
+                width: 100%;
+                padding: 0 0 .4rem 0;
+                margin-bottom: -1px;
+
+            }
+        }
+
+        .seleccion-argentina {
+            margin: 65px 0 0 0;
+            display: flex;
+            justify-content: center;
+
+            a {
+                margin-right: 48px;
+            }
+        }
+
+        .coleccion-sostenible {
+            margin: 65px 0 0 0;
+            display: flex;
+            justify-content: center;
+
+            a {
+                margin-right: 48px;
+            }
+        }
+
+        .boca-juniors {
+            margin: 65px 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .river-plate {
+            margin: 65px 0 0 0;
+            display: flex;
+            justify-content: center;
+
+            a {
+                margin-right: 48px;
+            }
+        }
+
+        .zapatillas {
+            margin: 65px 0 0 0;
+            display: flex;
+            justify-content: center;
+
+            a {
+                margin-right: 48px;
+            }
+        }
+
+        .precios-justos {
+            margin: 65px 0 0 0;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .wrapped {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
     }
 }
 
@@ -913,6 +1088,34 @@ ul {
 }
 
 @media screen and (max-width: 540px) {
+    #hero1 {
+
+        .promo1 {
+            width: 150px;
+            margin-top: 150px;
+
+            .tex {
+                width: 200px;
+
+                h2 {
+                    font-size: 20px;
+                }
+            }
+
+            .parrafos {
+                width: 100px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        .video-style {
+            video {
+                object-fit: cover;
+            }
+        }
+    }
+
     .promo h1 {
         font-size: 40px;
     }
@@ -1010,14 +1213,128 @@ ul {
         margin-top: 20px;
         margin-right: 20px;
     }
-}
 
-.foot{
-    display: flex;
-    align-items: center;
+    .equipos-seleccionable {
+
+        .texto-menues {
+            width: 50px;
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+
+        .menues-contenedor {
+            a {
+                color: black;
+                font-family: 'adineue';
+                text-decoration: none;
+                text-transform: unset;
+                letter-spacing: .02em;
+                font-size: 36px;
+                line-height: 1;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid black;
+                padding: 0 0 0.4rem 0;
+                margin-bottom: -1px;
+
+                &:hover {
+                    border-bottom: 7px solid black;
+                    color: black;
+                    font-family: 'adineue';
+                    text-decoration: none;
+                    text-transform: unset;
+                    letter-spacing: .02em;
+                    font-size: 40px;
+                    line-height: 1;
+                    width: 100%;
+                    padding: 0 0 .4rem 0;
+                    margin-bottom: -1px;
+
+                }
+            }
+
+            .seleccion-argentina {
+                margin: 20px 0 0 0;
+
+            }
+
+            .coleccion-sostenible {
+                margin: 20px 0 0 0;
+            }
+
+            .boca-juniors {
+                margin: 20px 0 0 0;
+
+                a {
+                    margin-right: 48px;
+                }
+
+            }
+
+            .river-plate {
+                margin: 20px 0 0 0;
+
+            }
+
+            .zapatillas {
+                margin: 20px 0 0 0;
+            }
+
+            .precios-justos {
+                margin: 20px 0 0 0;
+
+                a {
+                    margin-right: 48px;
+                }
+
+            }
+
+            .wrapped {
+                display: grid;
+                grid-template-columns: auto;
+            }
+        }
+    }
+
+    .foot {
+        display: flex;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 969px) {
+    #hero1 {
+
+        .promo1 {
+            width: 200px;
+            margin-top: 20px;
+
+            .tex {
+                width: 200px;
+
+                h2 {
+                    font-size: 20px;
+                }
+            }
+
+            .parrafos {
+                width: 230px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+        .video-style {
+            video {
+                height: 60vh;
+                object-fit: cover;
+            }
+        }
+    }
+
     .imagen-gana .texto-messi {
         margin-left: 20px;
     }
@@ -1025,6 +1342,90 @@ ul {
     .container-texto {
         flex-wrap: wrap;
         margin-left: 25px;
+    }
+
+    .equipos-seleccionable {
+        .texto-menues {
+            width: 50px;
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+
+        .menues-contenedor {
+            a {
+                color: black;
+                font-family: 'adineue';
+                text-decoration: none;
+                text-transform: unset;
+                letter-spacing: .02em;
+                font-size: 36px;
+                line-height: 1;
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid black;
+                padding: 0 0 0.4rem 0;
+                margin-bottom: -1px;
+
+                &:hover {
+                    border-bottom: 7px solid black;
+                    color: black;
+                    font-family: 'adineue';
+                    text-decoration: none;
+                    text-transform: unset;
+                    letter-spacing: .02em;
+                    font-size: 40px;
+                    line-height: 1;
+                    width: 100%;
+                    padding: 0 0 .4rem 0;
+                    margin-bottom: -1px;
+
+                }
+            }
+
+            .seleccion-argentina {
+                margin: 20px 0 0 0;
+
+            }
+
+            .coleccion-sostenible {
+                margin: 20px 0 0 0;
+            }
+
+            .boca-juniors {
+                margin: 20px 0 0 0;
+
+                a {
+                    margin-right: 48px;
+                }
+
+            }
+
+            .river-plate {
+                margin: 20px 0 0 0;
+
+            }
+
+            .zapatillas {
+                margin: 20px 0 0 0;
+            }
+
+            .precios-justos {
+                margin: 20px 0 0 0;
+
+                a {
+                    margin-right: 48px;
+                }
+
+            }
+
+            .wrapped {
+                display: grid;
+                grid-template-columns: auto;
+            }
+        }
+
     }
 }
 
