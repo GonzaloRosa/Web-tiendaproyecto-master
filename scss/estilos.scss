@@ -209,7 +209,7 @@ $estilos: (min-alto: 100vh,
 
     .video-style {
         display: flex;
-        object-fit: cover;
+        object-fit: contain;
 
         video {
             width: 100%;
@@ -252,6 +252,13 @@ $estilos: (min-alto: 100vh,
     padding: 40px;
     justify-content: space-around;
     box-sizing: border-box;
+    .precio {
+        background-color: white;
+        margin-top: 260px;
+        margin-left: 2px;
+        top: 0;
+        position: absolute;
+    }
 }
 
 /* FINALIZA PRODUCTOS INDEX */
@@ -489,7 +496,8 @@ h5 {
     justify-content: center;
     padding: 40px;
     justify-content: space-around;
-    .precio{
+
+    .precio {
         background-color: white;
         margin-top: 260px;
         margin-left: 2px;
@@ -737,6 +745,9 @@ ul {
     display: flex;
     padding-left: 15px;
     padding-right: 15px;
+    .card-title{
+        text-transform: uppercase;
+    }
 }
 
 .texto-tendencias {
@@ -1088,6 +1099,14 @@ ul {
 }
 
 @media screen and (max-width: 540px) {
+    .imagen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     #hero1 {
 
         .promo1 {
@@ -1110,9 +1129,7 @@ ul {
         }
 
         .video-style {
-            video {
-                object-fit: cover;
-            }
+            video {}
         }
     }
 
@@ -1306,6 +1323,7 @@ ul {
 }
 
 @media screen and (max-width: 969px) {
+    
     #hero1 {
 
         .promo1 {
@@ -1335,8 +1353,10 @@ ul {
         }
     }
 
-    .imagen-gana .texto-messi {
-        margin-left: 20px;
+    .imagen-gana {
+        .texto-messi {
+            margin-left: 20px;
+        }
     }
 
     .container-texto {

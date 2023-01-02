@@ -170,7 +170,7 @@
 }
 #hero1 .video-style {
   display: flex;
-  object-fit: cover;
+  object-fit: contain;
 }
 #hero1 .video-style video {
   width: 100%;
@@ -208,6 +208,13 @@
   padding: 40px;
   justify-content: space-around;
   box-sizing: border-box;
+}
+.container3 .precio {
+  background-color: white;
+  margin-top: 260px;
+  margin-left: 2px;
+  top: 0;
+  position: absolute;
 }
 
 /* FINALIZA PRODUCTOS INDEX */
@@ -635,6 +642,9 @@ ul {
   padding-left: 15px;
   padding-right: 15px;
 }
+.contenedorDeTendencias .card-title {
+  text-transform: uppercase;
+}
 
 .texto-tendencias {
   color: black;
@@ -923,6 +933,13 @@ ul {
   }
 }
 @media screen and (max-width: 540px) {
+  .imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
   #hero1 .promo1 {
     width: 150px;
     margin-top: 150px;
@@ -937,9 +954,6 @@ ul {
     width: 100px;
     display: flex;
     flex-wrap: wrap;
-  }
-  #hero1 .video-style video {
-    object-fit: cover;
   }
   .promo h1 {
     font-size: 40px;
