@@ -108,7 +108,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .capa {
@@ -161,6 +160,8 @@
   font-family: "Adineue";
 }
 #hero1 .promo1 .parrafos {
+  display: flex;
+  flex-wrap: wrap;
   color: white;
   width: 530px;
   padding-left: 15px;
@@ -220,7 +221,7 @@
 /* FINALIZA PRODUCTOS INDEX */
 .container-imagen2 {
   background: url(../img/fw22-adiclub-wc-statement-generico-d_tcm216-968551.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 52vh;
 }
@@ -277,7 +278,7 @@
 .container-imagen {
   background: url(../img/fw22-holidays-mh-hp-d_tcm216-971241.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   height: 700px;
 }
 
@@ -408,7 +409,6 @@
 .fondo .parrafo {
   margin-top: 20px;
 }
-/* COMIENZA PIE DE PAGINA */
 h5 {
   text-transform: uppercase;
 }
@@ -933,13 +933,6 @@ ul {
   }
 }
 @media screen and (max-width: 540px) {
-  .imagen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
   #hero1 .promo1 {
     width: 150px;
     margin-top: 150px;
@@ -951,9 +944,24 @@ ul {
     font-size: 20px;
   }
   #hero1 .promo1 .parrafos {
-    width: 100px;
+    width: 400px;
     display: flex;
     flex-wrap: wrap;
+  }
+  #hero1 .video-style {
+    overflow: hidden;
+    position: relative;
+  }
+  #hero1 .video-style video {
+    height: 100%;
+    width: 100%;
+  }
+  .imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
   .promo h1 {
     font-size: 40px;
@@ -965,6 +973,9 @@ ul {
     flex-wrap: wrap;
     margin-left: 25px;
     margin-right: 25px;
+  }
+  .container-imagen {
+    background-size: 100% 100%;
   }
   .container-texto1 {
     flex-wrap: wrap;
@@ -1105,19 +1116,24 @@ ul {
     margin-top: 20px;
   }
   #hero1 .promo1 .tex {
-    width: 200px;
+    width: 220px;
   }
   #hero1 .promo1 .tex h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
   #hero1 .promo1 .parrafos {
-    width: 230px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 150px;
+  }
+  #hero1 .promo1 .parrafos p {
+    font-size: 12px;
+  }
+  #hero1 .promo1 .enlace2 {
+    font-size: 12px;
   }
   #hero1 .video-style video {
-    height: 60vh;
-    object-fit: cover;
+    height: 50vh;
+    object-fit: fill;
+    object-position: center;
   }
   .imagen-gana .texto-messi {
     margin-left: 20px;

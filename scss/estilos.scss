@@ -141,7 +141,7 @@ $estilos: (min-alto: 100vh,
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    // object-fit: cover;
 }
 
 .capa {
@@ -197,6 +197,8 @@ $estilos: (min-alto: 100vh,
         }
 
         .parrafos {
+            display: flex;
+            flex-wrap: wrap;
             color: white;
             width: 530px;
             padding-left: 15px;
@@ -252,6 +254,7 @@ $estilos: (min-alto: 100vh,
     padding: 40px;
     justify-content: space-around;
     box-sizing: border-box;
+
     .precio {
         background-color: white;
         margin-top: 260px;
@@ -265,7 +268,7 @@ $estilos: (min-alto: 100vh,
 
 .container-imagen2 {
     background: url(../img/fw22-adiclub-wc-statement-generico-d_tcm216-968551.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 52vh;
 }
@@ -328,7 +331,7 @@ $estilos: (min-alto: 100vh,
 .container-imagen {
     background: url(../img/fw22-holidays-mh-hp-d_tcm216-971241.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     height: 700px;
 }
 
@@ -482,7 +485,6 @@ $estilos: (min-alto: 100vh,
     }
 }
 
-/* COMIENZA PIE DE PAGINA */
 h5 {
     text-transform: uppercase;
 }
@@ -745,7 +747,8 @@ ul {
     display: flex;
     padding-left: 15px;
     padding-right: 15px;
-    .card-title{
+
+    .card-title {
         text-transform: uppercase;
     }
 }
@@ -1099,13 +1102,6 @@ ul {
 }
 
 @media screen and (max-width: 540px) {
-    .imagen {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
 
     #hero1 {
 
@@ -1122,15 +1118,28 @@ ul {
             }
 
             .parrafos {
-                width: 100px;
+                width: 400px;
                 display: flex;
                 flex-wrap: wrap;
             }
         }
 
         .video-style {
-            video {}
+            overflow: hidden;
+            position: relative;
+            video {
+                height: 100%;
+                width: 100%;
+            }
         }
+    }
+
+    .imagen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 
     .promo h1 {
@@ -1145,6 +1154,9 @@ ul {
         flex-wrap: wrap;
         margin-left: 25px;
         margin-right: 25px;
+    }
+    .container-imagen{
+        background-size: 100% 100%;
     }
 
     .container-texto1 {
@@ -1323,7 +1335,7 @@ ul {
 }
 
 @media screen and (max-width: 969px) {
-    
+
     #hero1 {
 
         .promo1 {
@@ -1331,24 +1343,30 @@ ul {
             margin-top: 20px;
 
             .tex {
-                width: 200px;
+                width: 220px;
 
                 h2 {
-                    font-size: 20px;
+                    font-size: 22px;
                 }
             }
 
             .parrafos {
-                width: 230px;
-                display: flex;
-                flex-wrap: wrap;
+                width: 150px;
+                p{
+                    font-size: 12px;
+                }
+            }
+
+            .enlace2{
+                font-size: 12px;
             }
         }
 
         .video-style {
             video {
-                height: 60vh;
-                object-fit: cover;
+                height: 50vh;
+                object-fit: fill;
+                object-position: center;
             }
         }
     }
